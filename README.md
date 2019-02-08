@@ -46,10 +46,11 @@ From now on, we will be using GitHub for submitting homework
 solutions, which is more convenient than NYU classes, in particular,
 for programming assignments.
 
-Put your solution into the file `solution.md`. Once you have completed
-the assignment, you can submit your solution by pushing the modified
-file to GitHub. This can be done by opening a terminal in the
-repositories's root directory and executing the following commands in the :
+Put your solution into the file [`solution.md`](solution.md). Once you
+have completed the assignment, you can submit your solution by pushing
+the modified file to GitHub. This can be done by opening a terminal in
+the repository's root directory and then executing the following
+commands in the terminal:
 
 ```bash
 git add .
