@@ -106,8 +106,8 @@ of Scala (names must be declared before use and the static scope of a
 name is the entire block in which it is declared). At each print
 statement, indicate which declarations of `x` and `y` are in the
 static scope. What does the program print when `main` is executed
-assuming static scoping (or will the compiler identify static semantic
-errors)?
+assuming static scoping (or will the compiler reject the program and
+identify static semantic errors)?
 
 Repeat the exercise for the declaration-order rules of Java (but with
 nested subroutines) - that is, names must be declared before use, and
@@ -137,7 +137,6 @@ def first(y: Int) {
 def second () {
   var x: Int
   first(3)
-  print_x()
 }
 
 def main () {
@@ -197,8 +196,8 @@ struct Node {
   Node* next;
 };
 
-void foo(Node* x) {
-  delete x->next;
+void foo(Node* n) {
+  delete n->next;
 }
 
 Node* create(int x, Node* n) {
@@ -214,7 +213,6 @@ int main(void) {
   Node* n2 = create(2, n1);
   
   foo(n2);
-  
   Node* n3 = create(3, NULL);
   
   n1->data = 42;
